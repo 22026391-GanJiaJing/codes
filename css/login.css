@@ -1,0 +1,61 @@
+/*
+I declare that this code was written by me. 
+I will not copy or allow others to copy my code. 
+I understand that copying code is considered as plagiarism.
+
+Student Name: Gan Jia Jing
+Student ID: 22026391
+Class: C369-2D-E63C-A
+Date/Time Last modified: 4/7/2023 3:06:10 PM 
+*/
+
+html{
+    overflow-y: hidden;
+}
+.Logbuttons{
+    margin: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 7px;
+    border-radius: 0;
+    border: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(245, 245, 245, 0.811);
+}
+.loginbox{
+    
+    background-color: rgba(255, 255, 255, 0.852);
+    border-radius: 100px;
+    width: 400px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.links{
+    color: blue;
+    text-decoration: underline;
+    font-size: 12px;
+    text-align: center;
+}
+.boxbuttons{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 213px;
+    margin: auto;
+    margin-left: 25%;
+    border-radius: 0;
+    border-width: 1px;
+    background-color: rgb(22, 55, 154);
+    color: white;
+}
+.inputbox{
+    border-radius: 0;
+    border-width: 1px;
+    padding: 6px;
+    width: 200px;
+    margin-left: 25%;
+    padding-top: 13px;
+    opacity: 80%;
+    
+}

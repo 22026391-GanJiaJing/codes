@@ -1,0 +1,48 @@
+/*
+I declare that this code was written by me. 
+I will not copy or allow others to copy my code. 
+I understand that copying code is considered as plagiarism.
+
+Student Name: Gan Jia Jing
+Student ID: 22026391
+Class: C369-2D-E63C-A
+Date/Time Last modified: 4/7/2023 3:06:10 PM 
+*/
+
+.image {
+    width: 600px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.oddrow {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.evenrow {
+    display: grid;
+    grid-template-columns: 600px 700px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.bigtitle {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin: auto;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace
+}
+.des{
+    word-wrap: break-word;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}

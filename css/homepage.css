@@ -1,0 +1,65 @@
+
+/*
+I declare that this code was written by me. 
+I will not copy or allow others to copy my code. 
+I understand that copying code is considered as plagiarism.
+
+Student Name: Gan Jia Jing
+Student ID: 22026391
+Class: C369-2D-E63C-A
+Date/Time Last modified: 4/7/2023 3:06:10 PM 
+*/
+.boxstyle{
+    margin: 10px;
+            background-color: white;
+            border-radius: 30px;
+}
+.titlefont{
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.bottombuttons{
+    color: white;
+    margin-right: 30px;
+    font-size: 30px;
+    background-color: rgb(170, 79, 255);
+    border-radius: 10px;
+    border: transparent;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: right;
+}
+.bottombuttons:hover{
+    background-color:rgb(132, 0, 255);
+    cursor: pointer;
+    border-radius: 17px;
+    transition:background-color 1s,border-radius 1s;
+
+
+}
+.bottombuttons:active{
+    background-color: rgb(170, 79, 255);
+    border-radius: 17px;
+}
+.desSize{
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 0px;
+}
+.contactno{
+    color: blue;
+    text-decoration: underline;
+    margin-left: 15px;
+}
+.contactno:hover{
+    cursor: pointer;
+}
+.contactus{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 15px;
+}

@@ -1,0 +1,57 @@
+
+/*
+I declare that this code was written by me. 
+I will not copy or allow others to copy my code. 
+I understand that copying code is considered as plagiarism.
+
+Student Name: Gan Jia Jing
+Student ID: 22026391
+Class: C369-2D-E63C-A
+Date/Time Last modified: 4/7/2023 3:06:10 PM 
+*/
+.title{
+    text-align: center;
+    font-size: 30px;
+
+}
+.searchqnbar{
+    border-radius: 100px;
+    border-style: solid;
+    width: 1150px;
+    margin-left: 5%;
+    padding: 7px;
+}
+.faqbox{
+ width: 1150px;
+ margin-left: 5%;
+ border-style: solid;
+ border-radius: 0;
+ border-width: 1px;
+height: 150px;
+overflow-y: scroll;
+background-color: rgb(230, 230, 230);
+}
+.questions{
+    padding-left: 8px;
+border-style: solid;
+margin: 0;
+padding-top: 2px;
+padding-bottom: 2px;
+border-width: 1px;
+border-color: rgba(128, 128, 128, 0.416);
+}
+.FaQ{
+    margin-left: 5%;
+    font-size: 30px;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.topicpic{
+    border-radius: 40px;
+    width: 300px;
+    height: 150px;
+    margin-left: 40px;
+    z-index: -1;
+    position: relative;
+}

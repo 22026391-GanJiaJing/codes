@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-y: hidden;">
+<!--
+ I declare that this code was written by me. 
+ I will not copy or allow others to copy my code. 
+ I understand that copying code is considered as plagiarism.
+ 
+ Student Name: Gan Jia Jing
+ Student ID: 22026391
+ Class: C369-2D-E63C-A
+ Date/Time Last modified: 4/7/2023 3:06:10 PM 
+
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <img src="Pics/singapore-background-150ltnsxuqjnl2cs.jpg" style="width:100%;
+    height: 700px;object-fit: cover; z-index:-10;position: absolute;">
+    <button class="Logbuttons">
+        Locations
+    </button>
+    <button onclick="window.location='HelpSupport.html'" class="Logbuttons">
+        contact us
+    </button>
+    <button onclick="window.location='index.html'" class="Logbuttons">
+        Home page
+    </button>
+
+    <div style="grid-template-rows: 100px 500px; ">
+        <div onclick="window.location='index.html'">
+            <button class="logo" style="width: 225px;margin: auto;">
+                <img src="Pics/Logo.png" style="width: 70px;
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;">
+                <strong style="margin-top: 30px;">SFMG Bank </strong>
+            </button>
+
+        </div>
+        <div>
+            <div class="loginbox">
+                <div><!--User ID -->
+                    <input type="text"placeholder="User ID" class="inputbox" id="user-id" style="margin-bottom: 10px; margin-top: 25px;">
+
+                </div>
+                <div> <!--Password -->
+                    <input type="text"placeholder="Password"id="password" class="inputbox">
+                </div>
+                <div><!--sign up now-->
+                    
+                    <p
+                    onclick="window.location='Signup1.html'" class="links">
+                        Sign up now!
+                    </p>
+                </div>
+                <div><!--login button -->
+                    <form onsubmit="return validateLoginForm();" action="Profile.html" method="post">
+                    <button type="submit" class="boxbuttons" style="margin-bottom: 10px;">
+                        Login
+                    </button>
+                </div>
+                <div><!--the i is a black the rest is red login with singpass button-->
+                    <a href="https://www.singpass.gov.sg/home/ui/login">
+                    <button class="boxbuttons">
+                        Login with singpass
+                    </button>
+                </a>
+                </div>
+                <div><!-- forgot user id or password-->
+                    <p class="links">
+                        Forgot User ID or Password
+                    </p>
+                </div>
+                <div onclick="window.location='HelpSupport.html'"><!-- faq-->
+                    <p class="links">
+                        FAQ
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validateLoginForm() {
+            const userID = document.getElementById("user-id").value;
+            const password = document.getElementById("password").value;
+
+            if (!userID || !password) {
+                alert("Please fill in all the required fields.");
+                return false; // Prevent form submission
+            }
+
+            return true; // Allow form submission
+        }
+    </script>
+</body>
+
+</html>

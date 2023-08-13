@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+ I declare that this code was written by me. 
+ I will not copy or allow others to copy my code. 
+ I understand that copying code is considered as plagiarism.
+ 
+ Student Name: Gan Jia Jing
+ Student ID: 22026391
+ Class: C369-2D-E63C-A
+ Date/Time Last modified: 4/7/2023 3:06:10 PM 
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="css/signup.css">
+
+</head>
+
+<body>
+
+    <img src="Pics/15821144235e4d2677934ee.png" style="z-index: -1;position: absolute;width: 1300px;">
+    <div onclick="window.location='index.html'"><!--logo-->
+        <div>
+            <button class="logo">
+                <img src="Pics/Logo.png" style="width: 70px;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;">
+                <strong style="margin-top: 30px;">SFMG Bank </strong>
+            </button>
+        </div>
+    </div>
+    <div class="boxsign">
+        <div class="bar">
+            <div class="others">
+                <p>
+                    PERSONAL DETAILS
+                </p>
+            </div>
+            <div class="picked">
+                <p>
+                    SMS OTP
+                </p>
+            </div>
+            <div class="others">
+                <p>
+                    CARD DETAILS
+                </p>
+            </div>
+            <div class="others">
+                <p>
+                    LOGIN DETAILS
+                </p>
+            </div>
+        </div>
+        <div style="margin-left: 100px;padding-top: 20px;height: 100px;">
+            <p>
+                Phone Number
+            </p>
+            <select name="Country" id="Country" style="height: 22px;">
+                <option value="">Country</option>
+                <option value="Sg">Singapore +65</option>
+                <option value="idk">Malaysia</option>
+                <option value="idk2">Others</option>
+
+            </select>
+            <input type="text" id="phoneNo" placeholder="Phone Number">
+        </div>
+        <div style="margin-left: 100px;">
+            <p>OTP:</p>
+            <input type="text" id="otpans">
+        </div>
+        <div style="margin-left: 100px;height: 150px;">
+            <button onclick="sendotp()">SEND</button>
+            <p id="otp" style="color: green;">
+                Do not share your OTP with others
+            </p>
+        </div>
+
+        <div style="margin-left: 100px;">
+            <button onclick="window.location='Signup1.html'" class="nextbutt">
+                BACK
+            </button>
+            <button onclick="checkotp()" class="nextbutt">
+                NEXT
+            </button>
+        </div>
+    </div>
+    <script>
+        function sendotp() {
+
+            if (document.getElementById("phoneNo").value == ""){
+                document.getElementById("otp").innerHTML="Phone Number not filled"
+            }else if (document.getElementById("Country").value == ""){
+                document.getElementById("otp").innerHTML="Country not filled"
+            }
+            else{
+            
+                document.getElementById("otp").innerHTML = "OTP sent. Check your phone"
+        }}
+        function checkotp(){
+            if (document.getElementById("otpans").value == ""){
+                document.getElementById("otp").innerHTML="OTP not filled"
+            }else{
+            
+                window.location='Signup3.html';
+        }
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

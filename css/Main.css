@@ -1,0 +1,80 @@
+/*
+I declare that this code was written by me. 
+I will not copy or allow others to copy my code. 
+I understand that copying code is considered as plagiarism.
+
+Student Name: Gan Jia Jing
+Student ID: 22026391
+Class: C369-2D-E63C-A
+Date/Time Last modified: 4/7/2023 3:06:10 PM 
+*/
+
+html {
+    height: max-content;
+    margin: 0;
+    overflow-x:initial ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(190, 75, 129);
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+
+.Top {
+
+    background-color: rgba(170, 79, 255, 0.477);
+    width: 1263px;
+    grid-template-columns: 300px 570px 250px 100px;
+    display: grid;
+}
+
+.buttons {
+    color: white;
+    background-color: transparent;
+    width: 140px;
+    height: 100%;
+    border: transparent;
+    font-size: 17px;
+}
+.buttons:hover,
+.logo:hover{
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.buttonMAN {
+    margin-left: 10px;
+    width: 35%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+
+}
+.searchbar{
+    border: 6px;
+    border-radius: 30px;
+    margin: 35px;
+    padding: 5px;
+    padding-right: 60px;
+
+    
+}
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 215px;
+    color: white;
+    font-size: 25px;
+    background-color: transparent;
+    border: 0;
+    margin-left: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

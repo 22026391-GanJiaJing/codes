@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+ I declare that this code was written by me. 
+ I will not copy or allow others to copy my code. 
+ I understand that copying code is considered as plagiarism.
+ 
+ Student Name: Gan Jia Jing
+ Student ID: 22026391
+ Class: C369-2D-E63C-A
+ Date/Time Last modified: 4/7/2023 3:06:10 PM 
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="css/signup.css">
+
+</head>
+
+<body>
+
+    <img src="Pics/15821144235e4d2677934ee.png" style="z-index: -1;position: absolute;width: 1300px;">
+    <div><!--logo-->
+        <div onclick="window.location='index.html'">
+            <button class="logo">
+                <img src="Pics/Logo.png" style="width: 70px;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;">
+                <strong style="margin-top: 30px;">SFMG Bank </strong>
+            </button>
+        </div>
+    </div>
+    <div class="boxsign">
+        <div class="bar">
+            <div class="picked">
+                <p>
+                    PERSONAL DETAILS
+                </p>
+            </div>
+            <div class="others">
+                <p>
+                    SMS OTP
+                </p>
+            </div>
+            <div class="others">
+                <p>
+                    CARD DETAILS
+                </p>
+            </div>
+            <div class="others">
+                <p>
+                    LOGIN DETAILS
+                </p>
+            </div>
+        </div>
+        <div style="margin-left: 100px;padding-top:20px ;height: 100px;">
+            <p>
+                Personal Details
+            </p>
+            <select name="ID types" id="ID types"style="height: 22px;">
+                <option value="">ID types</option>
+                <option value="sg">Singaporean / PR NRIC</option>
+                <option value="Malaysia">Malaysian IC</option>
+                <option value="Passport">Passport</option>
+
+            </select>
+            <input  type="text" id="idenNo" placeholder="Identity Number">
+        </div>
+        <div style="margin-left: 100px;height: 150px;" aria-valuenow="">
+            <p>
+                Date Of Birth
+            </p>
+            <input id="DOB" type="date" >
+        </div>
+        <script>
+            function checkingInfo() {
+                var ID = document.getElementById("ID types").value;
+                var idenNo = document.getElementById("idenNo").value;
+                var DOB = document.getElementById("DOB").value;
+
+                console.log("ID:"+ID+"  idno  "+idenNo+"  dob  "+DOB)
+                if (ID == "" || idenNo == "" || DOB=="") {
+                    document.getElementById("message").innerHTML = "**Fill all information please!";
+                }
+                else{
+                    sessionStorage.setItem("IDtype",ID.value)
+                    sessionStorage.setItem("idenNo",idenNo.value)
+                    sessionStorage.setItem("DOB",DOB.value)
+                    window.location='Signup2.html';
+                }
+
+            }
+
+        </script>
+
+
+        <div style="margin-left: 100px;">
+            <button onclick="checkingInfo()" class="nextbutt">
+                NEXT
+            </button>
+        </div>
+        <div>
+            <p id="message" style="color: red;margin-left: 100px;">
+                
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
