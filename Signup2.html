@@ -107,7 +107,8 @@
             if (document.getElementById("otpans").value == ""){
                 document.getElementById("otp").innerHTML="OTP not filled"
             }else{
-            
+                sessionStorage.setItem("phoneNo",document.getElementById("phoneNo").value)
+
                 window.location='Signup3.html';
         }
 

@@ -12,6 +12,24 @@ Date/Time Last modified: 4/7/2023 3:06:10 PM
 html{
     overflow-y: hidden;
 }
+
+/*Appear Animation*/
+
+.hiddened {
+    opacity: 0;
+    filter: blur(3px);
+    transition: all .7s;
+  }
+  
+  .appear {
+    opacity: 1;
+    filter: blur(0);
+  }
+  
+
+/*Appear Animation*/
+
+
 .Logbuttons{
     margin: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

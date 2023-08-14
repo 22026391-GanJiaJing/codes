@@ -60,7 +60,7 @@
             </div>
         </div>
         <div><!--search bar-->
-            <input type="text" placeholder="searchbar" class="searchbar">
+            <input type="text" placeholder="Search Bar" class="searchbar">
 
 
         </div>
@@ -91,7 +91,7 @@
 
 
 
-    <div style="display: grid;grid-template-columns: 650px 600px; width: 50%;">
+    <div class="hidden" style="display: grid;grid-template-columns: 650px 600px; width: 50%;">
         <div><!-- leftbottom-->
             <div style="grid-template-rows: 1fr 2fr ;
             display: grid;height: 300px; width: 98%;" class="boxstyle"><!--FAQ-->
@@ -164,8 +164,26 @@
         </div>
 
     </div>
+    <p style="text-align: center;">Copyright SMFG © 2023. All rights reserved.</p>
 
+<script>
+     /* Scroll Animator*/
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry) 
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((eL) => { observer.observe(eL) });
+/* End of scroll animator */
+</script>
 </body>
 
 </html>

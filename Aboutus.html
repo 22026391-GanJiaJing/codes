@@ -61,7 +61,7 @@
             </div>
         </div>
         <div><!--search bar-->
-            <input type="text" placeholder="searchbar" class="searchbar">
+            <input type="text" placeholder="Search Bar" class="searchbar">
 
 
         </div>
@@ -89,7 +89,7 @@
 
     </div>
 
-    <div><!--Story-->
+    <div class="hidden"><!--Story-->
         <p class="bigtitle">
             &#8275 Our Story &#8275
         </p>
@@ -98,7 +98,7 @@
             <p class="des">SFMG is Singapore's preferred bank, cherished by families for its security and top-tier features. We prioritize safeguarding assets through advanced security measures and continually innovate to offer the finest services that meet our customers' evolving needs. SFMG stands as a symbol of trust and prosperity across Singapore.</p>
         </div>
     </div>
-    <div><!--Values-->
+    <div class="hidden"><!--Values-->
         <p class="bigtitle">
             &#8275 Our Values &#8275
         </p>
@@ -109,7 +109,7 @@
             <img src="Pics/pexels-karolina-grabowska-4968382.jpg" class="image">
         </div>
     </div>
-    <div><!--What we do-->
+    <div class="hidden"><!--What we do-->
         <p class="bigtitle">
             &#8275 What we do &#8275
         </p>
@@ -120,7 +120,8 @@
             </p>
         </div>
     </div>
- 
+    <p style="text-align: center;">Copyright SMFG © 2023. All rights reserved.</p>
+    
 
 
 
@@ -138,7 +139,24 @@
 
 
 
+    <script>
+        /* Scroll Animator*/
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry) 
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((eL) => { observer.observe(eL) });
+/* End of scroll animator */
+    </script>
 </body>
 
 </html>

@@ -40,7 +40,7 @@
             <form action="Transaction2.html" method="post">
                 <p>Transaction Method</p>           
                 <input type="radio" id="Method" value="Overseas" name="trans" required>
-                <label for="OverSeas">Overseas</label>
+                <label for="Overseas">Overseas</label>
                 <input type="radio" id="Method" value="Local" name="trans">
                 <label for="local">Local</label>
 
@@ -53,13 +53,21 @@
                 <label for="other">To other's Account</label>
                 <input type="radio" id="type" value="over" name="transaction">
                 <label for="over">Oversea Account</label><br><br>
-                <input type="submit" value="Next">
+                <input type="submit"class="nextbutt" value="NEXT" onclick="saveStorage()">
             </form>
             </div>
         </div>
     </div>
 
-
+<script>
+    function saveStorage(){
+        var selectedMethod = document.querySelector('input[name="trans"]:checked');
+            if (selectedMethod) {
+                var methodValue = selectedMethod.value;
+                sessionStorage.setItem("transMethod", methodValue);
+            }
+    }
+</script>
 
 
 

@@ -57,27 +57,27 @@
                 </p>
             </div>
         </div>
-        <form id="signupForm" action="verify.html" method="post" onsubmit="return validateForm();">
-        <div style="margin-left: 100px; padding-top: 20px;height: 100px;">
+        <form id="signupForm" action='verify.html' method="post" onsubmit="return validateForm();">
+        <div style="margin-left: 100px; padding-top: 20px;height: 80px;">
             <p>
                 Email
             </p>
 
-            <input type="text" placeholder="Email" required>
+            <input id= "email" type="text" placeholder="Email" required>
     
         </div>
         <div style="margin-left: 100px;">
             <p>
                 User ID
             </p>
-            <input type="text" placeholder="User ID" required>
+            <input id="userid" type="text" placeholder="User ID" required>
             
         </div>
-        <div style="margin-left: 100px;">
+        <div style="margin-left: 100px;margin-bottom: 50px;">
             <p>
                 Password
             </p>
-            <input type="text" placeholder="Password" required>
+            <input id="password" type="text" placeholder="Password" required>
             <input type="text" placeholder="Re-enter Password" required>
         </div>
     </form>
@@ -115,7 +115,8 @@
                 alert("Passwords do not match.");
                 return false; 
             }
-
+            
+            
             return true; 
         }
     </script>

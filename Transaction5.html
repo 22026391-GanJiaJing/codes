@@ -11,7 +11,7 @@
  Date/Time Last modified: 4/7/2023 3:06:10 PM 
 
 -->
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/signup.css">
 
 </head>
+
 <body>
 
     <img src="Pics/15821144235e4d2677934ee.png" style="z-index: -1;position: absolute;width: 1300px;">
@@ -40,17 +41,33 @@
             <p>
                 Transaction Successful
             </p>
-           
+            <p>Transaction Method: <span id="transMethod"></span></p>
+            <p>To: <span id="to"></span></p>
+            <p>Amount Transfered: $<span id="amount"></span></p>
+
 
         </div>
-  
-        
-        <div style="margin-left: 100px;">
+
+
+        <div style="margin-left: 100px;margin-top: 100px;">
             <button onclick="window.location='Profile.html'" class="nextbutt">
-                Profile
+                PROFILE
             </button>
 
         </div>
+
+        <script>
+            var a = sessionStorage.getItem("transMethod");
+            var c= sessionStorage.getItem("to");
+            var d = sessionStorage.getItem("amount");
+
+
+            document.getElementById("transMethod").textContent = a;
+            document.getElementById("to").textContent = c;
+            document.getElementById("amount").textContent = d;
+            
+
+        </script>
     </div>
 
 
@@ -65,4 +82,5 @@
 
 
 </body>
+
 </html>

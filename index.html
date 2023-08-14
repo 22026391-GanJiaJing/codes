@@ -58,7 +58,7 @@
             </div>
         </div>
         <div><!--search bar-->
-            <input type="text" placeholder="searchbar" class="searchbar">
+            <input type="text" placeholder="Search Bar" class="searchbar">
 
 
         </div>
@@ -80,10 +80,10 @@
 
     </div>
 
-    <a href="">
+    
         <img style="width: 1263px;height: 400px;" src="Pics/Sentosa-Overview-2020_HIGHRES_V2-1024x576.jpg" alt="">
-        </a>
-    <div style="display: grid;grid-template-columns: 850px 400px; width: 50%;">
+        
+    <div class="hidden" style="display:grid;grid-template-columns: 850px 400px; width: 50%;">
         <div><!-- leftbottom-->
             <div style="grid-template-rows: 1fr 2fr 1fr;
             display: grid;height: 300px; width: 98%;" class="boxstyle"><!--what-->
@@ -131,13 +131,13 @@
             </div>
         </div>
         <div class="boxstyle"><!--right bottom-->
-            <p class="titlefont">contact us</p>
+            <p class="titlefont">Contact Us</p>
             <div style="display: grid;grid-template-rows: 1fr 1fr; grid-template-columns: 1fr 1fr;">
 
                 <div>
                     <div>
                         <p class="contactus">
-                            Personal bank
+                            Personal Banking
                         </p>
                     </div>
                     <div>
@@ -150,7 +150,7 @@
                 <div>
                     <div>
                         <p class="contactus">
-                            Business related
+                            For Business Related
                         </p>
                     </div>
                     <div>
@@ -162,7 +162,7 @@
                 </div>
                 <div>
                     <div>
-                        <p class="contactus">Other problems</p>
+                        <p class="contactus">Other Issues</p>
                     </div>
                     <div>
                         <p class="contactno">+65 123213927</p>
@@ -170,7 +170,7 @@
                 </div>
                 <div>
                     <div>
-                        <p class="contactus">Securities related</p>
+                        <p class="contactus">Security Related</p>
                     </div>
                     <div>
                         <p class="contactno">+65 123213927</p>
@@ -181,7 +181,25 @@
         </div>
     </div>
     </div>
+    <p style="text-align: center;">Copyright SMFG © 2023. All rights reserved.</p>
+    <script>
+        /* Scroll Animator*/
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry) 
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((eL) => { observer.observe(eL) });
+/* End of scroll animator */
+    </script>
 
 </body>
 

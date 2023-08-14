@@ -39,7 +39,7 @@
         <form action="Transaction5.html" method="post">
             <div style="margin-left: 100px;padding-top:20px ;height: 100px;">
                 <p>Amount to Transfer</p>
-                <input type="text" placeholder="Amount" pattern="[0-9]+" required>
+                <input id="amount" type="text" placeholder="Amount" pattern="[0-9]+" required>
                 SGD
             </div>
 
@@ -52,7 +52,7 @@
                 <button onclick="window.location='Transaction2.html'" class="nextbutt">
                     BACK
                 </button>
-                <input type="submit" value="Next">
+                <input class="nextbutt" type="submit" value="NEXT" onclick="saveStorage()">
             </div>
 
 
@@ -60,7 +60,11 @@
     </div>
 
 
-
+<script>
+     function saveStorage(){
+    sessionStorage.setItem("amount",document.getElementById("amount").value)
+     }
+</script>
 
 
 

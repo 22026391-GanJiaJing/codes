@@ -42,13 +42,27 @@
         <div style="margin-left: 300px;">
             <p>Account Has been created
             </p>
+            <p>Phone Number: <span id="phoneNo"></span></p>
+            <p>Card Number: <span id="cardNo"></span></p>
+       
+
+
         </div>
-        <div style="margin-left: 100px;margin-top: 100px;margin-left: 300px;">
+        <div style="margin-left: 100px;margin-top: 50px;margin-left: 300px;">
             <button onclick="window.location='Profile.html'" class="nextbutt">
                 Home
             </button>
         </div>
     </div>
+    <script>
+        var a = sessionStorage.getItem("phoneNo");
+        var b = sessionStorage.getItem("cardNo");
+
+
+        document.getElementById("phoneNo").textContent = a;
+        document.getElementById("cardNo").textContent = b;
+
+    </script>
 
 
 

@@ -11,7 +11,7 @@
  Date/Time Last modified: 4/7/2023 3:06:10 PM 
 
 -->
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/signup.css">
 
 </head>
+
 <body>
 
     <img src="Pics/15821144235e4d2677934ee.png" style="z-index: -1;position: absolute;width: 1300px;">
@@ -36,37 +37,47 @@
     </div>
     <div class="boxsign">
 
-        <form action="Transaction3.html" method="post"style="margin-left: 100px;padding-top:20px;">
+        <form action="Transaction3.html" method="post" style="margin-left: 100px;padding-top:20px;">
             <p>Select the account to transfer from</p>
             <select name="from" id="from" required>
                 <option value="">Choose Account</option>
                 <option value="999321312">
                     Checking Accounts 999321312</option>
                 <option value="994143212">Saving Accounts 994143212</option>
-                
+
             </select>
 
             <br>
             <p>Account to transfer to</p>
             <p>By Phone number, account number, etc</p>
-            <select name="to" id="to" required>
+            <select name="to" required>
                 <option value="">Phone Country</option>
-                <option value="Sg">Singapore +65</option>
-                <option value="idk">Malaysia</option>
-                <option value="idk2">other</option>
+                <option value="Singapore">Singapore +65</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="other">other</option>
             </select>
 
             <br>
 
             <p>Phone Number</p>
-            <input type="text"placeholder="Phone Number" pattern="[0-9]+" required><br><br>
+            <input id="to" type="text" placeholder="Phone Number" pattern="[0-9]+" required><br><br>
 
             <button onclick="window.location='Transaction1.html'" class="nextbutt">
                 BACK
             </button>
-            <input type="submit" value="Next">
+            <input class="nextbutt" type="submit" value="NEXT" onclick="saveStorage()">
 
         </form>
     </div>
+    <script>
+        function saveStorage() {
+
+            var to= document.getElementById("to").value;
+
+      
+            sessionStorage.setItem("to", to);
+        }
+    </script>
 </body>
+
 </html>
